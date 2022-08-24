@@ -22,7 +22,6 @@ const Tasks = () => {
         const item = {
             id: newCount,
             value: newItem,
-            checked: false,
         };
         setItems(oldList => [...oldList, item]);
         setNewItem("");
