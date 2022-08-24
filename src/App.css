@@ -1,38 +1,117 @@
-.App {
+@font-face {
+  font-family: "font";
+  src: url(../src/assets/fonts/Michroma-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+}
+
+ol, ul {
+  padding:0;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family:initial;
+  font-size:initial;
+  line-height: initial;
+}
+
+h1{
+  margin: 2rem;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  margin: 0 auto;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  color:rgb(222, 222, 222);
   text-align: center;
+  font-family: "font";
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.createTask {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input[type=text] {
+  padding: 0.8rem;
+  margin: 1rem 1rem 1rem 0;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: #757575;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+input[type=text]:focus {
+  border: 2px solid #555;
+  color: rgb(189, 189, 189);
+}
+
+button {
+  padding: 0.8rem;
+  border:none;
+  width: 150px;
+  color:rgb(189, 189, 189);
+  border-radius: 10px;
+  background-color: rgb(94, 0, 0);
+  cursor: pointer;
+}
+
+.items {
+  margin: 1rem auto;
+}
+
+.items ul li {
+  padding: 0.8rem 0.8rem 0.8rem 1.5rem;
+  position: relative;
+  margin: 0.5rem auto;
+  width: 100%;
+  color: #757575;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.08);
+  font-family: auto;
+  font-size: 0.9em;
+}
+.items ul li::before {
+  position: absolute;
+  content: "";
+  left:0px;
+  top: 0;
+  background-color: rgb(94, 0, 0);
+  width: 10px;
+  height: 100%;
+  z-index: 999;
+}
+button.btnItem {
+  position: absolute;
+  content: url(./assets/img/trash.png);
+  color:#757575;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.03);
+  width: 45px;
+  height: 100%;
+  display: flex;
+  border-radius: 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
