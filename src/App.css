@@ -96,8 +96,8 @@ button {
   content: "";
   left:0px;
   top: 0;
-  background-color: rgb(94, 0, 0);
-  width: 10px;
+  background-color: rgb(133, 0, 0);
+  width: 8px;
   height: 100%;
   z-index: 999;
 }
@@ -114,4 +114,48 @@ button.btnItem {
   border-radius: 0;
   align-items: center;
   justify-content: center;
+}
+
+.counter {
+  margin: 1rem;
+  font-size: smaller;
+}
+
+span.nameTask {
+  padding-left: 10px;
+}
+
+span.bg-red {
+  padding:5px;
+  margin: 5px;
+  width: 20px;
+  background-color:rgb(94, 0, 0);
+  border-radius: 5px;
+}
+
+[type="checkbox"]{
+ accent-color: rgb(133, 0, 0);
+}
+
+.line {
+  text-decoration: line-through !important;
+}
+
+input[type=search] {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: #757575;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+input[type=search]:focus {
+  border: 2px solid #555;
+  color: rgb(189, 189, 189);
+}
+
+.resultSearch {
+  margin:1rem auto;
 }
